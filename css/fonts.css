@@ -1,0 +1,30 @@
+@font-face {
+	font-family: GraphikLC;
+	src: url(../fonts/Graphik-LC-Black.woff2) format("woff2");
+	font-weight: 900
+}
+@font-face {
+	font-family: GraphikLC;
+	src: url(../fonts/Graphik-LC-Bold.woff2) format("woff2"), url(../fonts/Graphik-LC-Bold.woff) format("woff");
+	font-weight: 700
+}
+@font-face {
+	font-family: GraphikLC;
+	src: url(../fonts/Graphik-LC-Light.woff2) format("woff2"), url(../fonts/Graphik-LC-Light.woff) format("woff");
+	font-weight: 100
+}
+@font-face {
+	font-family: GraphikLC;
+	src: url(../fonts/Graphik-LC-Medium.woff2) format("woff2"), url(../fonts/Graphik-LC-Medium.woff) format("woff");
+	font-weight: 500
+}
+@font-face {
+	font-family: GraphikLC;
+	src: url(../fonts/Graphik-LC-Regular.woff2) format("woff2"), url(../fonts/Graphik-LC-Regular.woff) format("woff");
+	font-weight: 300
+}
+@font-face {
+	font-family: PTMono;
+	src: url(../fonts/PTMono-Regular.woff2) format("woff2"), url(../fonts/PTMono-Regular.woff) format("woff");
+	font-weight: 300
+}

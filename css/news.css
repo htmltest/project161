@@ -1,0 +1,72 @@
+.page-news .container {max-width:1366px}
+
+@media screen and (max-width:1365px) {
+    .page-news .mobile-types .container {padding:0}
+    .page-news .urban-select {margin:0}
+}
+
+.page-news-list {margin:53px -15px -64px -15px; font-size:0; line-height:0; letter-spacing:-1px}
+.page-news-item {display:inline-block; vertical-align:top; padding:0 5px 64px 5px; width:25%}
+.page-news-item a {display:block; text-decoration:none; color:#000; transition:all 0.2s; padding:10px}
+.page-news-item-fest a:hover {color:#000; background:#ffde4f}
+.page-news-item-forum a:hover {color:#fff; background:#686ee9}
+.page-news-item-preview img {display:block; width:100%}
+.page-news-item-date {text-transform:uppercase; padding:20px 0 0 0; font-size:12px; line-height:15px; font-weight:500; letter-spacing:0}
+.page-news-item-title {padding:7px 0 20px 0; font-size:20px; line-height:26px; font-weight:500; letter-spacing:0}
+
+@media screen and (max-width:1365px) {
+    .page-news-item {width:33.33%}
+}
+
+@media screen and (max-width:1240px) {
+    .page-news-list {margin:0}
+    .page-news-item {display:block; padding:0 0 40px 0; width:auto}
+    .page-news-item a {padding:0}
+    .page-news-item-fest a:hover {color:#000; background:transparent}
+    .page-news-item-forum a:hover {color:#000; background:transparent}
+    .page-news-item-date {font-size:14px; line-height:17px}
+    .page-news-item-title {padding:8px 0 0 0; font-size:24px; line-height:31px}
+}
+
+.page-news-item-big {display:block; padding:0 15px 70px 15px; width:auto}
+.page-news-item-big a {padding:0; position:relative; color:#fff}
+.page-news-item-big .page-news-item-content {position:absolute; left:0; bottom:0; right:0; padding:76px 60px 49px 60px; background:linear-gradient(0deg, #222222 0%, rgba(34, 34, 34, 0) 100%); transition:all 0.2s}
+.page-news-item-big.page-news-item-fest a:hover .page-news-item-content {background:#ffde4f}
+.page-news-item-big.page-news-item-forum a:hover .page-news-item-content {background:#686ee9}
+.page-news-item-big .page-news-item-date {display:inline-block; padding:0 10px; height:33px; background:#000; color:#fff; font-size:18px; line-height:33px}
+.page-news-item-big .page-news-item-title {padding:12px 0 0 0; font-size:36px; line-height:43px; max-width:880px}
+
+@media screen and (max-width:1240px) {
+    .page-news-item-big {padding:0 0 40px 0}
+    .page-news-item-big a {color:#000}
+    .page-news-item-big .page-news-item-content {position:static; left:auto; bottom:auto; right:auto; padding:0; background:transparent}
+    .page-news-item-big.page-news-item-fest a:hover .page-news-item-content {background:transparent}
+    .page-news-item-big.page-news-item-forum a:hover .page-news-item-content {background:transparent}
+    .page-news-item-big .page-news-item-date {display:block; padding:20px 0 0 0; height:auto; background:transparent; color:#000; font-size:14px; line-height:17px}
+    .page-news-item-big .page-news-item-title {padding:8px 0 0 0; font-size:24px; line-height:31px; max-width:none}
+}
+
+.pager {margin:74px 0 0 0; font-size:0; line-height:0; letter-spacing:-1px; text-align:center}
+.pager a,
+.pager span {display:inline-block; vertical-align:top; width:40px; height:40px; font-weight:300; font-size:18px; line-height:40px; color:#373737; text-decoration:none; text-align:center; position:relative; margin:0 2px; transition:all 0.2s}
+.pager a.pager-prev {margin:0 10px 0 0}
+.pager a.pager-next {margin:0 0 0 10px}
+.pager a.pager-prev svg,
+.pager a.pager-next svg {display:inline-block; vertical-align:middle; margin:-2px 0 0 0}
+.pager a.pager-prev svg path,
+.pager a.pager-next svg path {stroke:#3c3c3c; transition:all 0.2s}
+.pager a.pager-prev:hover svg path,
+.pager a.pager-next:hover svg path {stroke:#fff}
+.pager a:hover {background:#686ee9; color:#fff}
+.pager a.active {background:#686ee9; font-weight:bold; color:#fff}
+
+@media screen and (max-width:1240px) {
+    .pager {margin:40px 0 0 0; position:relative}
+    .pager a,
+    .pager span {margin:0}
+    .pager a.pager-prev {display:none}
+    .pager a.pager-next {display:none}
+}
+
+.news-page-link-category {text-transform:uppercase; color:#000; text-decoration:none; margin:0 0 0 10px}
+.news-page-link-category:hover {color:#000; text-decoration:underline}

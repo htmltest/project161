@@ -15,10 +15,17 @@ $(window).on('load resize', function() {
                 if (otherBlock.offset().top == curTop) {
                     var newHeight = otherBlock.outerHeight();
                     if (newHeight > curHeight) {
-                        curBlock.css({'height': newHeight + 'px'});
+                        ccurHeight = newHeight;
                     } else {
                         otherBlock.css({'height': curHeight + 'px'});
                     }
+                }
+            });
+
+            curList.find('.page-news-item a').each(function() {
+                var otherBlock = $(this);
+                if (otherBlock.offset().top == curTop) {
+                    otherBlock.css({'height': curHeight + 'px'});
                 }
             });
         });

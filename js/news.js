@@ -15,9 +15,7 @@ $(window).on('load resize', function() {
                 if (otherBlock.offset().top == curTop) {
                     var newHeight = otherBlock.outerHeight();
                     if (newHeight > curHeight) {
-                        ccurHeight = newHeight;
-                    } else {
-                        otherBlock.css({'height': curHeight + 'px'});
+                        curHeight = newHeight;
                     }
                 }
             });

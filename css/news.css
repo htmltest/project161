@@ -1,49 +1,63 @@
-.page-news .container {max-width:1366px}
+.page-news .urban-type {width:200px; padding:0; height:47px; background:rgba(0, 0, 0, 0.05); text-align:center; font-size:18px; line-height:47px; font-weight:normal}
+.page-news .urban-type:hover {background:#000}
+.page-news .urban-type.active {background:#000}
+.page-news .urban-type__close {right:17px; bottom:24px}
+.page-news .urban-type__close:before,
+.page-news .urban-type__close:after {width:18px; right:0}
 
-@media screen and (max-width:1365px) {
-    .page-news .mobile-types .container {padding:0}
-    .page-news .urban-select {margin:0}
-}
+.page-news .urban-type {width:120px; height:28px; font-size:12px; line-height:28px}
+.page-news .urban-type__close {right:10px; bottom:15px}
+.page-news .urban-type__close:before,
+.page-news .urban-type__close:after {width:14px}
 
 .page-news-list {margin:53px -15px -64px -15px; font-size:0; line-height:0; letter-spacing:-1px}
 .page-news-item {display:inline-block; vertical-align:top; padding:0 5px 64px 5px; width:25%}
 .page-news-item a {display:block; text-decoration:none; color:#000; transition:all 0.2s; padding:10px}
-.page-news-item-fest a:hover {color:#000; background:#ffde4f}
-.page-news-item-forum a:hover {color:#fff; background:#686ee9}
+.page-news-item-forum a:hover {color:#000; background:rgba(104, 110, 233, 0.5)}
+.page-news-item-fest a:hover {color:#000; background:rgba(255, 222, 79, 0.7)}
 .page-news-item-preview img {display:block; width:100%}
 .page-news-item-date {text-transform:uppercase; padding:20px 0 0 0; font-size:12px; line-height:15px; font-weight:500; letter-spacing:0}
 .page-news-item-title {padding:7px 0 20px 0; font-size:20px; line-height:26px; font-weight:500; letter-spacing:0}
 
-@media screen and (max-width:1365px) {
-    .page-news-item {width:33.33%}
-}
+.page-news-list {margin:33px -15px 0 -15px}
+.page-news-item {padding:0 5px}
+.page-news-item-title {font-size:16px; line-height:24px}
 
-@media screen and (max-width:1240px) {
+@media screen and (max-width:1023px) {
+    .page-news .mobile-types .container {padding:0}
     .page-news-list {margin:0}
     .page-news-item {display:block; padding:0 0 40px 0; width:auto}
     .page-news-item a {padding:0}
-    .page-news-item-fest a:hover {color:#000; background:transparent}
     .page-news-item-forum a:hover {color:#000; background:transparent}
+    .page-news-item-fest a:hover {color:#000; background:transparent}
     .page-news-item-date {font-size:14px; line-height:17px}
     .page-news-item-title {padding:8px 0 0 0; font-size:24px; line-height:31px}
 }
 
 .page-news-item-big {display:block; padding:0 15px 70px 15px; width:auto}
 .page-news-item-big a {padding:0; position:relative; color:#fff}
-.page-news-item-big .page-news-item-content {position:absolute; left:0; bottom:0; right:0; padding:76px 60px 49px 60px; background:linear-gradient(0deg, #222222 0%, rgba(34, 34, 34, 0) 100%); transition:all 0.2s}
-.page-news-item-big.page-news-item-fest a:hover .page-news-item-content {background:#ffde4f}
-.page-news-item-big.page-news-item-forum a:hover .page-news-item-content {background:#686ee9}
-.page-news-item-big .page-news-item-date {display:inline-block; padding:0 10px; height:33px; background:#000; color:#fff; font-size:18px; line-height:33px}
+.page-news-item-big a:hover {color:#fff}
+.page-news-item-big .page-news-item-content {position:absolute; left:0; bottom:0; right:0; padding:76px 60px 49px 60px; background:linear-gradient(0deg, #222222 0%, rgba(34, 34, 34, 0) 100%)}
+.page-news-item-big a:hover .page-news-item-content {background:transparent}
+.page-news-item-big .page-news-item-date {display:inline-block; padding:0 10px; height:33px; background:#f2f2f2; color:#000; font-size:18px; line-height:33px; position:relative}
 .page-news-item-big .page-news-item-title {padding:12px 0 0 0; font-size:36px; line-height:43px; max-width:880px}
+.page-news-item-big .page-news-item-date span {display:block; position:absolute; left:100%; top:0; margin-left:10px; width:134px; height:33px; text-align:center}
+.page-news-item-big.page-news-item-forum .page-news-item-date span {background:rgba(104, 110, 233, 1); color:#fff}
+.page-news-item-big.page-news-item-fest .page-news-item-date span {background:rgba(255, 222, 79, 1); color:#000}
 
-@media screen and (max-width:1240px) {
+.page-news-item-big {padding:0 15px 45px 15px}
+.page-news-item-big .page-news-item-date {font-size:13px; line-height:24px; height:22px}
+.page-news-item-big .page-news-item-title {font-size:24px; line-height:36px}
+.page-news-item-big .page-news-item-date span {height:22px; width:124px}
+
+@media screen and (max-width:1023px) {
     .page-news-item-big {padding:0 0 40px 0}
     .page-news-item-big a {color:#000}
+    .page-news-item-big a:hover {color:#000}
     .page-news-item-big .page-news-item-content {position:static; left:auto; bottom:auto; right:auto; padding:0; background:transparent}
-    .page-news-item-big.page-news-item-fest a:hover .page-news-item-content {background:transparent}
-    .page-news-item-big.page-news-item-forum a:hover .page-news-item-content {background:transparent}
     .page-news-item-big .page-news-item-date {display:block; padding:20px 0 0 0; height:auto; background:transparent; color:#000; font-size:14px; line-height:17px}
     .page-news-item-big .page-news-item-title {padding:8px 0 0 0; font-size:24px; line-height:31px; max-width:none}
+    .page-news-item-big .page-news-item-date span {display:none}
 }
 
 .pager {margin:74px 0 0 0; font-size:0; line-height:0; letter-spacing:-1px; text-align:center}
@@ -60,7 +74,7 @@
 .pager a:hover {background:#686ee9; color:#fff}
 .pager a.active {background:#686ee9; font-weight:bold; color:#fff}
 
-@media screen and (max-width:1240px) {
+@media screen and (max-width:1023px) {
     .pager {margin:40px 0 0 0; position:relative}
     .pager a,
     .pager span {margin:0}
@@ -70,3 +84,5 @@
 
 .news-page-link-category {text-transform:uppercase; color:#000; text-decoration:none; margin:0 0 0 10px}
 .news-page-link-category:hover {color:#000; text-decoration:underline}
+
+.nominations__item__special::before {content:""; width:32px; height:29px; background:url(../images/nomination-special.svg) no-repeat}

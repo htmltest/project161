@@ -86,3 +86,68 @@
 .news-page-link-category:hover {color:#000; text-decoration:underline}
 
 .nominations__item__special::before {content:""; width:32px; height:29px; background:url(../images/nomination-special.svg) no-repeat}
+
+.conference-subtitle {font-weight:500; color:#828282; font-size:40px; line-height:52px; margin-top:-45px}
+.conference-subtitle span {font-weight:bold; color:#ff0000; margin-right:10px}
+.conference-anonce {margin:30px 0 0 0; font-size:18px; line-height:27px}
+.conference-anonce p {margin:18px 0 0 0; padding:0}
+
+@media screen and (max-width:1023px) {
+    .conference-subtitle {font-size:28px; line-height:35px; margin-top:-27px}
+    .conference-subtitle span {display:block; margin:0}
+    .conference-anonce {margin:30px 0 0 0; font-size:20px; line-height:36px}
+    .conference-anonce p {margin:10px 0 0 0}
+}
+
+.conference-features {margin:54px -15px 0 -15px; font-size:0; line-height:0; letter-spacing:-1px}
+.conference-feature {display:inline-block; vertical-align:top; width:33.33%; padding:0 15px}
+.conference-feature-title {font-size:27px; line-height:42px; font-weight:600; color:#000; letter-spacing:0}
+.conference-feature-text {font-size:18px; line-height:27px; color:#504f4f; letter-spacing:0; margin:10px 0 0 0}
+.conference-feature-text p {margin:10px 0 0 0; padding:0}
+.conference-health {margin:42px 0 0 0; line-height:0}
+
+@media screen and (max-width:1023px) {
+    .conference-features {margin:40px 0 0 0}
+    .conference-feature {display:block; width:auto; padding:0; margin:30px 0 0 0}
+    .conference-feature-text {font-size:20px; line-height:36px}
+    .conference-health {display:none}
+}
+
+.conference-section-title {margin:100px 0 0 0; font-weight:900; font-size:40px; line-height:52px; color:#000}
+.conference-section-text {margin:21px 0 0 0; font-size:18px; line-height:27px; color:#000}
+
+@media screen and (max-width:1023px) {
+    .conference-section-title {margin:80px 0 0 0; font-size:32px; line-height:42px}
+    .conference-section-text {margin:10px 0 0 0; font-size:20px; line-height:36px}
+}
+
+.conference-section-partners {margin:26px -10px 0 -10px; font-size:0; line-height:0; letter-spacing:-1px}
+.conference-section-partner {display:inline-block; vertical-align:top; width:20%; padding:20px 10px 0 10px}
+.conference-section-partner-inner {display:block; height:212px; background:#f8f7f6; text-align:center; padding:10px; line-height:192px}
+a.conference-section-partner-inner:hover {transition:all 0.2s; transform:translateY(-5px)}
+.conference-section-partner-inner img {display:inline-block; vertical-align:middle; max-width:100%; max-height:100%}
+
+@media screen and (max-width:1023px) {
+    .conference-section-partners {margin:0 -10px}
+    .conference-section-partner {width:50%}
+}
+
+.conference-section-speakers {margin:0 -15px; font-size:0; line-height:0; letter-spacing:-1px}
+.conference-section-speaker {display:inline-block; vertical-align:top; width:25%; padding:50px 15px 0 15px}
+.conference-section-speaker-inner {display:block; text-decoration:none; color:#000}
+a.conference-section-speaker-inner:hover {color:#000; transition:all 0.2s; transform:translateY(-5px); text-decoration:none}
+.conference-section-speaker-photo img {display:block; width:100%}
+.conference-section-speaker-name {font-weight:600; font-size:24px; line-height:31px; letter-spacing:0; margin:30px 0 0 0}
+.conference-section-speaker-text {font-size:16px; line-height:24px; letter-spacing:0; margin:10px 0 0 0}
+.conference-section-speakers-more {display:none}
+
+@media screen and (max-width:1023px) {
+    .conference-section-speakers {margin:0 -10px}
+    .conference-section-speaker {width:50%; padding:16px 10px 24px 10px}
+    .conference-section-speaker+.conference-section-speaker+.conference-section-speaker+.conference-section-speaker+.conference-section-speaker+.conference-section-speaker+.conference-section-speaker+.conference-section-speaker+.conference-section-speaker+.conference-section-speaker+.conference-section-speaker {display:none}
+    .conference-section-speaker-name {font-size:20px; line-height:26px; margin:20px 0 0 0}
+    .conference-section-speaker-text {display:none}
+    .conference-section-speakers-more {padding:38px 10px 0 10px}
+    .conference-section-speakers-more.visible {display:block}
+    .conference-section-speakers-more a {display:block; height:47px; text-decoration:none; border:2px solid #000; color:#000; font-weight:500; font-size:18px; line-height:43px; text-transform:uppercase; letter-spacing:0.03em; text-align:center}
+}

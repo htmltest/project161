@@ -29,6 +29,31 @@ $(window).on('load resize', function() {
         });
     });
 
+    $('.main-conf-speakers-list').each(function() {
+        var curList = $(this);
+        if ($(window).width() > 1023) {
+            if (!curList.hasClass('slick-slider')) {
+                curList.slick({
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    prevArrow: '<button type="button" class="slick-prev"></button>',
+                    nextArrow: '<button type="button" class="slick-next"></button>',
+                    dots: false
+                });
+            }
+        } else {
+            if (curList.hasClass('slick-slider')) {
+                curList.slick('unslick');
+            }
+            if (curList.find('.main-conf-speaker:visible').length < curList.find('.main-conf-speaker').length) {
+                $('.main-conf-speakers-more').addClass('visible');
+            } else {
+                $('.main-conf-speakers-more').removeClass('visible');
+            }
+        }
+    });
+
 });
 
 $(document).ready(function() {
@@ -50,6 +75,20 @@ $(document).ready(function() {
             curBlock.find('.conference-section-speakers-more').removeClass('visible');
         }
         curBlock.find('.conference-section-speaker:lt(' + countVisible + ')').css({'display': 'inline-block'});
+        $('html, body').animate({'scrollTop': curTop}, 100);
+        e.preventDefault();
+    });
+
+    $('.main-conf-speakers-more a').click(function(e) {
+        var curBlock = $(this).parents().filter('.main-conf-speakers');
+        var countItems = curBlock.find('.main-conf-speaker').length;
+        var countVisible = curBlock.find('.main-conf-speaker:visible').length;
+        countVisible += 2;
+        var curTop = curBlock.find('.main-conf-speakers-more').offset().top;
+        if (countVisible >= countItems) {
+            curBlock.find('.main-conf-speakers-more').removeClass('visible');
+        }
+        curBlock.find('.main-conf-speaker:lt(' + countVisible + ')').addClass('visible');
         $('html, body').animate({'scrollTop': curTop}, 100);
         e.preventDefault();
     });

@@ -48,6 +48,9 @@
 
 
 
+<link rel="stylesheet" href="js/slick/slick.css" />
+<script src="js/slick/slick.min.js"></script>
+
 <link href="css/fonts.css" type="text/css" rel="stylesheet" />
 <link href="css/news.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="js/news.js"></script>
@@ -329,209 +332,12 @@
 
         <section class="page page-news">
             <div class="container page__content">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="page-title">Новости</h2>
-                    </div>
-                </div>
-
-                <div class="desktop-types">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <form name="arrFilter_form" action="/news/" method="get">
-                                <button class="urban-type" type="submit" name="arrFilter_pf[TYPE]" value="">Все</button>
-                                <button class="urban-type active" type="submit" name="arrFilter_pf[TYPE]" value="4705">Форум<span class="urban-type__close"><input type="submit" name="arrFilter_pf[TYPE]" style="display: none;" value=""></span></button>
-                                <button class="urban-type" type="submit" name="arrFilter_pf[TYPE]" value="4706">Фестиваль</button>
-                                <input type="hidden" name="set_filter" value="Y"/>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile-types">
-                    <div class="container">
-                        <select class="schedule__grid-mobile-select urban-select" onchange="window.location.href=this.options[this.selectedIndex].value">
-                            <option VALUE="/news/">Все</option>
-                            <option VALUE="/news/?arrFilter_pf%5BTYPE%5D=4705&set_filter=Y">Форум</option>
-                            <option VALUE="/news/?arrFilter_pf%5BTYPE%5D=4706&set_filter=Y">Фестиваль</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="news">
-                    <div class="news__row row">
-                        <div class="col-12">
-
-                            <div class="page-news-list">
-                                <div class="page-news-item page-news-item-big page-news-item-fest">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-main.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020 <span>Фестиваль</span></div>
-                                            <div class="page-news-item-title">Правительство Москвы и&nbsp;Moscow Urban Forum примут участие в Десятом Всемирном урбанистическом форуме</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-fest">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-01.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Сергей Собянин открыл седьмой Московский урбанистический форум</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-forum">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-02.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Москва попала в рейтинг самых «умных городов» будущего</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-fest">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-03.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">АИЖК представило на Московском урбанистическом форуме проекты  благоустройства в 40 городах РФ</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-forum">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-04.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Шоу-рум программы реновации впервые открыт в Москве</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-forum">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-02.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Александрос Уошберн: «Необходима синергия власти, капитала и дизайна»</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-fest">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-01.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Правительство Москвы и&nbsp;Moscow Urban Forum примут участие в Десятом Всемирном урбанистическом форуме</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-forum">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-04.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Moscow Urban Fest подарит орхидеи Ботаническому саду</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-fest">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-03.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Антон Кульбачевский: «Внедренные технологии энергосбережения оказались очень эффективными»</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-fest">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-01.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Правительство Москвы и&nbsp;Moscow Urban Forum примут участие в Десятом Всемирном урбанистическом форуме</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-forum">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-02.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Александрос Уошберн: «Необходима синергия власти, капитала и дизайна»</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-fest">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-03.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Антон Кульбачевский: «Внедренные технологии энергосбережения оказались очень эффективными»</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-forum">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-04.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Moscow Urban Fest подарит орхидеи Ботаническому саду</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-forum">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-02.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Александрос Уошберн: «Необходима синергия власти, капитала и дизайна»</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-fest">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-01.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Правительство Москвы и&nbsp;Moscow Urban Forum примут участие в Десятом Всемирном урбанистическом форуме</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-forum">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-04.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Moscow Urban Fest подарит орхидеи Ботаническому саду</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="page-news-item page-news-item-fest">
-                                    <a href="#">
-                                        <div class="page-news-item-preview"><img src="files/news-03.jpg" alt="" /></div>
-                                        <div class="page-news-item-content">
-                                            <div class="page-news-item-date">19 Мая 2020</div>
-                                            <div class="page-news-item-title">Антон Кульбачевский: «Внедренные технологии энергосбережения оказались очень эффективными»</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="pager">
-                                <a href="#" class="pager-prev"><svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 1L1 6.5L6 12" stroke-width="1.4"/></svg></a>
-                                <a href="#" class="active">1</a>
-                                <a href="#">2</a>
-                                <a href="#">3</a>
-                                <span>...</span>
-                                <a href="#">12</a>
-                                <a href="#">13</a>
-                                <a href="#">14</a>
-                                <a href="#" class="pager-next"><svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 12L6 6.5L1 1" stroke-width="1.4"/></svg></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+            
+                <p><a href="news.html">Новости</a></p>
+                <p><a href="news-detail.html">Новости - Детальная</a></p>
+                <p><a href="conference.html">Страница конференции</a></p>
+                <p><a href="main.html">Главная страница с блоком конференции</a></p>
+            
             </div>
         </section>
     </main>

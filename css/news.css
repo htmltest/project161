@@ -151,3 +151,93 @@ a.conference-section-speaker-inner:hover {color:#000; transition:all 0.2s; trans
     .conference-section-speakers-more.visible {display:block}
     .conference-section-speakers-more a {display:block; height:47px; text-decoration:none; border:2px solid #000; color:#000; font-weight:500; font-size:18px; line-height:43px; text-transform:uppercase; letter-spacing:0.03em; text-align:center}
 }
+
+.stream-counter {background:#25176f; padding:160px 0 170px 0; margin:-40px 0 97px 0}
+.stream-counter-title {font-weight:900; font-size:66px; line-height:66px; color:#ff2f66}
+.stream-counter-subtitle {margin:20px 0 0 0; font-weight:900; font-size:50px; line-height:50px; color:#fff}
+.stream-counter-container {margin:87px 0 0 0; color:#fff}
+.stream-counter-container::after {content:""; display:block; clear:both}
+.stream-counter-item {float:left}
+.stream-counter-item-value {font-weight:900; font-size:120px; line-height:120px}
+.stream-counter-item-text {margin:19px 0 0 0; font-weight:300; font-size:40px; line-height:40px}
+
+@media screen and (max-width:1159px) {
+    .stream-counter {padding:50px 0 85px 0; margin:-40px 0 48px 0}
+    .stream-counter-title {font-size:40px; line-height:48px}
+    .stream-counter-subtitle {margin:9px 0 0 0; font-size:30px; line-height:36px}
+    .stream-counter-container {margin:52px 0 0 0; color:#fff}
+    .stream-counter-item-value {font-size:55px; line-height:55px}
+    .stream-counter-item-text {margin:10px 0 0 0; font-size:20px; line-height:20px}
+}
+
+@media screen and (max-width:479px) {
+    .stream-counter-title {font-size:30px; line-height:36px}
+    .stream-counter-subtitle {font-size:20px; line-height:24px}
+    .stream-counter-item-value {font-size:30px; line-height:36px}
+    .stream-counter-item-text {font-size:16px; line-height:24px}
+}
+
+.stream-video {display:none; margin:160px 0 97px 0; position:relative; z-index:102}
+.stream-video-title {font-weight:900; font-size:66px; line-height:66px; color:#ff2f66}
+.stream-video-subtitle {margin:20px 0 0 0; font-weight:900; font-size:50px; line-height:50px; color:#000}
+.stream-video-player {margin:73px 0 0 0; background:#000; position:relative; height:100vh}
+.stream-video-player iframe {position:absolute; left:0; top:0; width:100%; height:100%}
+
+@media screen and (max-width:1159px) {
+    .stream-video {display:none; margin:50px 0 48px 0; z-index:auto}
+    .stream-video-title {font-size:40px; line-height:48px}
+    .stream-video-subtitle {margin:9px 0 0 0; font-size:30px; line-height:36px}
+    .stream-video-player {margin:38px 0 0 0; height:302px}
+}
+
+@media screen and (max-width:479px) {
+    .stream-video-title {font-size:30px; line-height:36px}
+    .stream-video-subtitle {font-size:20px; line-height:24px}
+}
+
+.main-conf {margin:131px 0 164px 0}
+.main-conf+.stream-counter {margin-top:0}
+.main-conf-title {font-weight:bold; font-size:50px; line-height:60px; color:#000}
+.main-conf-subtitle {font-weight:500; font-size:50px; line-height:60px; color:#828282}
+.main-conf-speakers {margin:74px 0 0 0}
+.main-conf-speakers-list {margin:0 -15px; font-size:0; line-height:0; letter-spacing:-1px; white-space:nowrap; position:relative; overflow:hidden}
+.main-conf-speaker {display:inline-block; vertical-align:top; width:25%; padding:5px 15px 0 15px; white-space:normal}
+.main-conf-speaker-inner {display:block; text-decoration:none; color:#000}
+a.main-conf-speaker-inner:hover {color:#000; transition:all 0.2s; transform:translateY(-5px); text-decoration:none}
+.main-conf-speaker-photo img {display:block; width:100%}
+.main-conf-speaker-name {font-weight:600; font-size:24px; line-height:31px; letter-spacing:0; margin:30px 0 0 0}
+.main-conf-speakers-more {display:none}
+.main-conf-text {margin:60px 0 0 0; font-size:24px; line-height:36px; color:#000}
+.main-conf-text p {margin:10px 0 0 0; padding:0}
+.main-conf-link {margin:60px 0 0 0}
+.main-conf-link a {display:inline-block; height:65px; text-decoration:none; border:3px solid #000; color:#000; padding:0 27px; font-weight:600; font-size:20px; line-height:61px; text-transform:uppercase; letter-spacing:0.03em; text-align:center; transition:all 0.2s}
+.main-conf-link a:hover {color:#fff; background:#000}
+
+@media screen and (max-width:1023px) {
+    .main-conf {margin:48px 0 65px 0}
+    .main-conf+.stream-counter {margin-top:0}
+    .main-conf-title {font-size:30px; line-height:36px}
+    .main-conf-subtitle {font-size:30px; line-height:36px}
+    .main-conf-speakers {margin:10px 0 0 0}
+    .main-conf-speakers-list {margin:0 -10px; white-space:normal}
+    .main-conf-speaker {display:none; width:50%; padding:20px 10px 0 10px}
+    .main-conf-speaker:nth-child(1),
+    .main-conf-speaker:nth-child(2),
+    .main-conf-speaker.visible {display:inline-block}
+    .main-conf-speaker-name {font-size:20px; line-height:26px; margin:20px 0 0 0}
+    .main-conf-link {margin:25px 0 0 0}
+    .main-conf-link a {display:block; padding:0}
+    .main-conf-speakers-more {margin:26px 0 0 0}
+    .main-conf-speakers-more.visible {display:block}
+    .main-conf-speakers-more a {display:block; height:65px; text-decoration:none; border:3px solid #000; color:#000; font-weight:600; font-size:20px; line-height:61px; text-transform:uppercase; letter-spacing:0.03em; text-align:center; transition:all 0.2s}
+    .main-conf-speakers-more a:hover {color:#fff; background:#000}
+}
+
+.main-conf-speakers-list .slick-prev,
+.main-conf-speakers-list .slick-next {display:block; position:absolute; z-index:2; top:108px; width:60px; height:56px; border:none; border-radius:0; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; transition:all 0.2s}
+.main-conf-speakers-list .slick-prev {left:14px; background:url(../images/main-conf-speakers-list-prev.png) no-repeat}
+.main-conf-speakers-list .slick-next {right:14px; background:url(../images/main-conf-speakers-list-next.png) no-repeat}
+.main-conf-speakers-list .slick-prev.slick-disabled,
+.main-conf-speakers-list .slick-next.slick-disabled {display:none !important}
+.main-conf-speakers-list .slick-prev:hover,
+.main-conf-speakers-list .slick-next:hover {opacity:0.8}

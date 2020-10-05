@@ -87,14 +87,16 @@
 
 .nominations__item__special::before {content:""; width:32px; height:29px; background:url(../images/nomination-special.svg) no-repeat}
 
-.conference-subtitle {font-weight:500; color:#828282; font-size:40px; line-height:52px; margin-top:-45px}
-.conference-subtitle span {font-weight:bold; color:#ff0000; margin-right:10px}
+.conference-subtitle {color:#828282; font-size:40px; line-height:52px; margin-top:-45px}
+.conference-subtitle span {font-weight:bold; color:#e88c91; margin-right:10px}
+.conference-subtitle span::after {content:""; display:inline-block; vertical-align:middle; width:2px; height:40px; margin:-2px 0 0 25px; background:#828282}
 .conference-anonce {margin:30px 0 0 0; font-size:18px; line-height:27px}
 .conference-anonce p {margin:18px 0 0 0; padding:0}
 
 @media screen and (max-width:1023px) {
     .conference-subtitle {font-size:28px; line-height:35px; margin-top:-27px}
     .conference-subtitle span {display:block; margin:0}
+    .conference-subtitle span::after {display:none}
     .conference-anonce {margin:30px 0 0 0; font-size:20px; line-height:36px}
     .conference-anonce p {margin:10px 0 0 0}
 }
@@ -207,7 +209,7 @@ a.main-conf-speaker-inner:hover {color:#000; transition:all 0.2s; transform:tran
 .main-conf-speaker-photo img {display:block; width:100%}
 .main-conf-speaker-name {font-weight:600; font-size:24px; line-height:31px; letter-spacing:0; margin:30px 0 0 0}
 .main-conf-speakers-more {display:none}
-.main-conf-text {margin:60px 0 0 0; font-size:24px; line-height:36px; color:#000}
+.main-conf-text {margin:60px 0 0 0; color:#000}
 .main-conf-text p {margin:10px 0 0 0; padding:0}
 .main-conf-link {margin:60px 0 0 0}
 .main-conf-link a {display:inline-block; height:65px; text-decoration:none; border:3px solid #000; color:#000; padding:0 27px; font-weight:600; font-size:20px; line-height:61px; text-transform:uppercase; letter-spacing:0.03em; text-align:center; transition:all 0.2s}
@@ -231,6 +233,13 @@ a.main-conf-speaker-inner:hover {color:#000; transition:all 0.2s; transform:tran
     .main-conf-speakers-more.visible {display:block}
     .main-conf-speakers-more a {display:block; height:65px; text-decoration:none; border:3px solid #000; color:#000; font-weight:600; font-size:20px; line-height:61px; text-transform:uppercase; letter-spacing:0.03em; text-align:center; transition:all 0.2s}
     .main-conf-speakers-more a:hover {color:#fff; background:#000}
+}
+
+@media screen and (max-width:479px) {
+    .main-conf-title {font-size:20px; line-height:30px}
+    .main-conf-subtitle {font-size:20px; line-height:30px}
+    .main-conf-speakers-more a {font-size:16px; height:47px; line-height:41px}
+    .main-conf-link a {font-size:16px; height:47px; line-height:41px}
 }
 
 .main-conf-speakers-list .slick-prev,

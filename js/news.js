@@ -75,7 +75,6 @@ $(document).ready(function() {
             curBlock.find('.conference-section-speakers-more').removeClass('visible');
         }
         curBlock.find('.conference-section-speaker:lt(' + countVisible + ')').css({'display': 'inline-block'});
-        $('html, body').animate({'scrollTop': curTop}, 100);
         e.preventDefault();
     });
 

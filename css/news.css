@@ -87,16 +87,13 @@
 
 .nominations__item__special::before {content:""; width:32px; height:29px; background:url(../images/nomination-special.svg) no-repeat}
 
-.conference-subtitle {color:#828282; font-size:40px; line-height:52px; margin-top:-45px}
-.conference-subtitle span {font-weight:bold; color:#e88c91; margin-right:10px}
-.conference-subtitle span::after {content:""; display:inline-block; vertical-align:middle; width:2px; height:40px; margin:-2px 0 0 25px; background:#828282}
+.conference-subtitle {color:#828282; font-size:40px; line-height:52px; margin-top:-45px; max-width:900px}
+.conference-subtitle span {display:block; font-weight:bold; color:#e88c91}
 .conference-anonce {margin:30px 0 0 0; font-size:18px; line-height:27px}
 .conference-anonce p {margin:18px 0 0 0; padding:0}
 
 @media screen and (max-width:1023px) {
     .conference-subtitle {font-size:28px; line-height:35px; margin-top:-27px}
-    .conference-subtitle span {display:block; margin:0}
-    .conference-subtitle span::after {display:none}
     .conference-anonce {margin:30px 0 0 0; font-size:20px; line-height:36px}
     .conference-anonce p {margin:10px 0 0 0}
 }
@@ -197,11 +194,15 @@ a.conference-section-speaker-inner:hover {color:#000; transition:all 0.2s; trans
     .stream-video-subtitle {font-size:20px; line-height:24px}
 }
 
-.main-conf {margin:131px 0 164px 0}
+.main-conf {margin:77px 0 114px 0}
 .main-conf+.stream-counter {margin-top:0}
-.main-conf-title {font-weight:bold; font-size:50px; line-height:60px; color:#000}
-.main-conf-subtitle {font-weight:500; font-size:50px; line-height:60px; color:#828282}
-.main-conf-speakers {margin:74px 0 0 0}
+.main-conf+.stream-counter+.stream-video {margin-top:0}
+.main-conf-title {font-weight:bold; font-size:50px; line-height:60px; color:#000; margin:14px 0 0 0; max-width:750px}
+.main-conf-subtitle {font-weight:500; font-size:24px; line-height:29px; color:#777}
+.main-conf-header {margin:23px 0 0 0}
+.main-conf-header::after {content:""; display:block; clear:both}
+.main-conf-date {float:left; font-weight:500; font-size:24px; line-height:29px; color:#000}
+.main-conf-speakers {margin:46px 0 0 0}
 .main-conf-speakers-list {margin:0 -15px; font-size:0; line-height:0; letter-spacing:-1px; white-space:nowrap; position:relative; overflow:hidden}
 .main-conf-speaker {display:inline-block; vertical-align:top; width:25%; padding:5px 15px 0 15px; white-space:normal}
 .main-conf-speaker-inner {display:block; text-decoration:none; color:#000}
@@ -209,17 +210,20 @@ a.main-conf-speaker-inner:hover {color:#000; transition:all 0.2s; transform:tran
 .main-conf-speaker-photo img {display:block; width:100%}
 .main-conf-speaker-name {font-weight:600; font-size:24px; line-height:31px; letter-spacing:0; margin:30px 0 0 0}
 .main-conf-speakers-more {display:none}
-.main-conf-text {margin:60px 0 0 0; color:#000}
-.main-conf-text p {margin:10px 0 0 0; padding:0}
-.main-conf-link {margin:60px 0 0 0}
+.main-conf-text {margin:50px 0 0 0; color:#000; font-size:20px; line-height:30px}
+.main-conf-text p {margin:8px 0 0 0; padding:0}
+.main-conf-link {float:right; margin:-43px 0 0 0}
 .main-conf-link a {display:inline-block; height:65px; text-decoration:none; border:3px solid #000; color:#000; padding:0 27px; font-weight:600; font-size:20px; line-height:61px; text-transform:uppercase; letter-spacing:0.03em; text-align:center; transition:all 0.2s}
 .main-conf-link a:hover {color:#fff; background:#000}
 
 @media screen and (max-width:1023px) {
-    .main-conf {margin:48px 0 65px 0}
+    .main-conf {margin:48px 0 65px 0; padding:0 0 96px 0; position:relative}
     .main-conf+.stream-counter {margin-top:0}
-    .main-conf-title {font-size:30px; line-height:36px}
-    .main-conf-subtitle {font-size:30px; line-height:36px}
+    .main-conf+.stream-counter+.stream-video {margin-top:0}
+    .main-conf-title {font-size:30px; line-height:36px; margin:12px 0 0 0}
+    .main-conf-subtitle {font-size:20px; line-height:24px}
+    .main-conf-header {margin:12px 0 0 0}
+    .main-conf-date {float:none; font-size:20px; line-height:30px}
     .main-conf-speakers {margin:10px 0 0 0}
     .main-conf-speakers-list {margin:0 -10px; white-space:normal}
     .main-conf-speaker {display:none; width:50%; padding:20px 10px 0 10px}
@@ -227,8 +231,10 @@ a.main-conf-speaker-inner:hover {color:#000; transition:all 0.2s; transform:tran
     .main-conf-speaker:nth-child(2),
     .main-conf-speaker.visible {display:inline-block}
     .main-conf-speaker-name {font-size:20px; line-height:26px; margin:20px 0 0 0}
-    .main-conf-link {margin:25px 0 0 0}
+    .main-conf-link {margin:0; float:none; position:absolute; left:15px; bottom:0; right:15px}
     .main-conf-link a {display:block; padding:0}
+    .main-conf-text {margin:30px 0 0 0; font-size:24px; line-height:36px}
+    .main-conf-text p {margin:10px 0 0 0; padding:0}
     .main-conf-speakers-more {margin:26px 0 0 0}
     .main-conf-speakers-more.visible {display:block}
     .main-conf-speakers-more a {display:block; height:65px; text-decoration:none; border:3px solid #000; color:#000; font-weight:600; font-size:20px; line-height:61px; text-transform:uppercase; letter-spacing:0.03em; text-align:center; transition:all 0.2s}
@@ -250,3 +256,5 @@ a.main-conf-speaker-inner:hover {color:#000; transition:all 0.2s; transform:tran
 .main-conf-speakers-list .slick-next.slick-disabled {display:none !important}
 .main-conf-speakers-list .slick-prev:hover,
 .main-conf-speakers-list .slick-next:hover {opacity:0.8}
+
+body {overflow-anchor: none}
